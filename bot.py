@@ -26,8 +26,8 @@ app = Client(
 async def start_command(client: Client, message: Message):
   user_name = message.from_user.first_name
   welcome_text = (
-      f"Hi 🛩️™**{user_name}**🌪️🇮🇪! I am one "
-      "and only MJ OTT Downloader Bot on Telegram.\n\n"
+      f"Hi 🛩️™**{user_name}**! I am one "
+      "and only ALLU OTT Downloader Bot on Telegram.\n\n"
       "I can help you to download content "
       "from OTT Platforms\n\n"
       "You can use me to Download **DRM "
@@ -42,9 +42,9 @@ async def start_command(client: Client, message: Message):
   keyboard = InlineKeyboardMarkup([
       [
           InlineKeyboardButton(
-              "Updates Channel ↗️", url="https://t.me/your_channel"
+              "Updates Channel ↗️", url="https://t.me/AlluTvSerials"
           ),
-          InlineKeyboardButton("Support ↗️", url="https://t.me/your_support"),
+          InlineKeyboardButton("Support ↗️", url="https://t.me/Anujith1238"),
       ],
       [
           InlineKeyboardButton("About", callback_data="about"),
@@ -71,15 +71,15 @@ async def plans_command(client: Client, message: Message):
       "⚠️ **Term and Conditions** ⚠️\n\n"
       "• **Payments are non-refundable, and we do not provide refunds.**\n"
       "• **If the service ceases to function, no compensation is provided.**\n\n"
-      "🚀 Need Help / Subscription? DM: @mjsupportstaff\n"
+      "🚀 Need Help / Subscription? DM: @Anujith1238\n"
       "💡 Use `/plans` to view plan details anytime."
   )
   keyboard = InlineKeyboardMarkup([
       [
           InlineKeyboardButton(
-              "Updates Channel ↗️", url="https://t.me/your_channel"
+              "Updates Channel ↗️", url="https://t.me/AlluTvSerials"
           ),
-          InlineKeyboardButton("Support ↗️", url="https://t.me/your_support"),
+          InlineKeyboardButton("Support ↗️", url="https://t.me/Anujith1238"),
       ],
       [
           InlineKeyboardButton("About", callback_data="about"),
@@ -169,9 +169,9 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton(
-                "Updates Channel ↗️", url="https://t.me/your_channel"
+                "Updates Channel ↗️", url="https://t.me/AlluTvSerials"
             ),
-            InlineKeyboardButton("Support ↗️", url="https://t.me/your_support"),
+            InlineKeyboardButton("Support ↗️", url="https://t.me/Anujith1238"),
         ],
         [
             InlineKeyboardButton("About", callback_data="about"),
@@ -194,21 +194,21 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
     await callback_query.answer()
     about_photo_url = "[YOUR_ABOUT_IMAGE_URL]"
     about_text = (
-        "🤖 **My Name** - MJ OTT Downloader Bot\n"
+        "🤖 **My Name** - ALLU OTT Downloader Bot\n"
         "🗂️ **Bot Version** - v7.0.0\n"
         "📝 **Language** - Python\n"
         "📚 **Library** - Pyrogram\n"
         "📡 **Hosted on** - [Linux Server]\n"
-        "👨‍💻 **Developer** - MJWebHacks\n"
-        "📢 **Updates Channel** - MJWebHacks\n"
-        "🕵️ **Buy Subscription** - MJWebHacks"
+        "👨‍💻 **Developer** - Anujith\n"
+        "📢 **Updates Channel** - AlluTvSerials\n"
+        "🕵️ **Buy Subscription** - Anujith"
     )
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton(
-                "Updates Channel ↗️", url="https://t.me/your_channel"
+                "Updates Channel ↗️", url="https://t.me/AlluTvSerials"
             ),
-            InlineKeyboardButton("Support ↗️", url="https://t.me/your_support"),
+            InlineKeyboardButton("Support ↗️", url="https://t.me/Anujith1238"),
         ],
         [InlineKeyboardButton("« Back to Home", callback_data="back_home")],
     ])
@@ -225,7 +225,7 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
   elif data == "contact":
     await callback_query.answer()
     contact_photo_url = "[YOUR_CONTACT_IMAGE_URL]"
-    contact_text = "📞 **Contact MJWebHacks**"
+    contact_text = "📞 **Contact @Anujith1238**"
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("« Back to Home", callback_data="back_home")]
     ])
@@ -266,17 +266,17 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
     await callback_query.answer()
     user_name = callback_query.from_user.first_name
     welcome_text = (
-        f"Hi 🛩️™**{user_name}**🌪️🇮🇪! I am one "
-        "and only MJ OTT Downloader Bot on Telegram.\n\n"
+        f"Hi 🛩️™**{user_name}**! I am one "
+        "and only ALLU OTT Downloader Bot on Telegram.\n\n"
         "I can help you to download content "
         "from OTT Platforms"
     )
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton(
-                "Updates Channel ↗️", url="https://t.me/your_channel"
+                "Updates Channel ↗️", url="https://t.me/AlluTvSerials"
             ),
-            InlineKeyboardButton("Support ↗️", url="https://t.me/your_support"),
+            InlineKeyboardButton("Support ↗️", url="https://t.me/Anujith1238"),
         ],
         [
             InlineKeyboardButton("About", callback_data="about"),
