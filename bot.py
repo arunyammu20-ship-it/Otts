@@ -191,7 +191,7 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
 
   elif data == "about":
     await callback_query.answer()
-    about_photo_url = "[YOUR_ABOUT_IMAGE_URL]"
+    about_photo_url = "[https://files.catbox.moe/m42fyk.jpg]"
     about_text = (
         "🤖 **My Name** - ALLU OTT Downloader Bot\n"
         "🗂️ **Bot Version** - v7.0.0\n"
@@ -223,7 +223,7 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
 
   elif data == "contact":
     await callback_query.answer()
-    contact_photo_url = "[YOUR_CONTACT_IMAGE_URL]"
+    contact_photo_url = "[https://files.catbox.moe/m42fyk.jpg]"
     contact_text = "📞 **Contact @Anujith1238**"
     keyboard = InlineKeyboardMarkup([
         [InlineKeyboardButton("« Back to Home", callback_data="back_home")]
@@ -297,12 +297,15 @@ async def button_handler(client: Client, callback_query: CallbackQuery):
       )
 
 
+# സുരക്ഷിതമായി ഇവന്റ് ലൂപ്പ് കൈകാര്യം ചെയ്യാൻ
 async def main():
   print("Bot is starting...")
   await app.start()
   print("Bot is running successfully!")
-  await asyncio.gather(*(asyncio.Event().wait(),))
+  await asyncio.Event().wait()
 
 
 if __name__ == "__main__":
+  loop = asyncio.get_event_loop()
+  loop.run_until_loop_complete = True  # type: ignore
   asyncio.run(main())
